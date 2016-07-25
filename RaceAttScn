@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd  ~/workspace/RaceAttackScan
+
+javac -cp ".:scr/.:scr/raceattscan/sqlite-jdbc-3.8.11.2.jar" scr/raceattscan/*.java
+
+java -cp ".:scr/.:scr/raceattscan/sqlite-jdbc-3.8.11.2.jar" raceattscan.RaceAttScn
+  test &
